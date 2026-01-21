@@ -1,36 +1,36 @@
 # Core Dependencies
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-streamlit==1.31.0
-python-multipart==0.0.6
+fastapi
+uvicorn[standard]
+streamlit
+python-multipart
 
 # Vector Database
-qdrant-client==1.7.3
+qdrant-client
 
 # AI/ML
-google-generativeai==0.3.2
-sentence-transformers==2.3.1
-transformers==4.37.2
-torch==2.1.2
-Pillow==10.2.0
+google-generativeai
+sentence-transformers
+transformers
+torch
+Pillow
 
 # Audio Processing (optional)
-# openai-whisper==20231117
-# soundfile==0.12.1
+# openai-whisper
+# soundfil
 
 # PDF Processing
-PyPDF2==3.0.1
-# pdf2image==1.17.0
+PyPDF2
+# pdf2image
 
 # Image Processing
-opencv-python==4.9.0.80
+opencv-python
 
 # Utilities
-python-dotenv==1.0.1
-pydantic==2.5.3
-numpy==1.26.3
-pandas==2.2.0
+python-dotenv
+pydantic
+numpy
+pandas
 
 # Optional: For production
-# gunicorn==21.2.0
-# prometheus-client==0.19.0
+# gunicorn
+# prometheus-client
