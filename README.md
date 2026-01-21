@@ -1,5 +1,10 @@
 # 🏥 CareLedger - AI-Powered Lifelong Medical Memory
 
+[![CI Status](https://img.shields.io/github/actions/workflow/status/yourusername/careledger/ci.yml?branch=main&label=CI&logo=github)](https://github.com/yourusername/careledger/actions)
+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 > **CareLedger is a long-term medical memory system, not a chatbot.**  
 > It remembers, evolves, and surfaces forgotten medical insights across years.
 
