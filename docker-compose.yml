@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  careledger-app:
+    build: .
+    container_name: careledger_streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - QDRANT_HOST=localhost
+      - QDRANT_PORT=6333
+    volumes:
+      - ./data:/app/data
+    command: streamlit run app.py --server.address 0.0.0.0
+    restart: unless-stopped
+
+  careledger-api:
+    build: .
+    container_name: careledger_api
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - QDRANT_HOST=localhost
+      - QDRANT_PORT=6333
+    volumes:
+      - ./data:/app/data
+    command: uvicorn api:app --host 0.0.0.0 --port 8000
+    restart: unless-stopped
+
+volumes:
+  careledger_data:
